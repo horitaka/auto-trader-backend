@@ -1,0 +1,5 @@
+{
+  "editor.formatOnSave": true,
+  "isort.check": true,
+  "editor.defaultFormatter": "ms-python.black-formatter"
+}
