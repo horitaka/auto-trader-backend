@@ -44,7 +44,7 @@ class Klines:
 
 
 def get_klines(symbol: str, price_type: PriceType, interval: Interval, date: str) -> Klines:
-    url = f"{GMO_PUBLIC_API_ENDPOINT}/v1/klines?symbol={symbol}&priceType={price_type}&interval={interval}&date={date}"
+    url = f"{GMO_PUBLIC_API_ENDPOINT}/v1/klines?symbol={symbol}&priceType={price_type.value}&interval={interval.value}&date={date}"  # noqa: E501
 
     response = requests.get(url)
     return response.json()

@@ -3,6 +3,13 @@
   "isort.check": true,
   "editor.defaultFormatter": "ms-python.black-formatter",
   "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit"
-  }
+    // "source.organizeImports": "explicit"
+    "source.organizeImports.python": "explicit"
+  },
+  "files.exclude": {
+    "**/__pycache__": true
+  },
+  "black-formatter.args": [
+    "--config pyproject.toml"
+  ]
 }
